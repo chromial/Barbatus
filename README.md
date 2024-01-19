@@ -1,5 +1,8 @@
 # Barbatus
 
-sudo arp -d 192.168.0.109  # From the client
+sudo systemctl status firewalld
+sudo firewall-cmd --zone=public --add-icmp-block=echo-request --permanent
+sudo firewall-cmd --reload
+
 
 
